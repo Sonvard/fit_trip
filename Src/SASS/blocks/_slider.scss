@@ -1,0 +1,40 @@
+.wrapper {
+    height: 765px;
+}
+
+.slider{
+    &__item{
+        img{
+            width: 100%; 
+        }
+    }
+}
+
+.title{
+    position: relative;
+    z-index: 2;
+    bottom: 490px;
+    font-size: 32px;
+    line-height: 65px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 4px;
+    &__span{
+        font-size: 55px;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+}
+
+.btn {
+    display: block;
+    position: relative;
+    z-index: 3;
+    bottom: 420px;
+    margin: 0 auto;
+    font-weight: 100;
+	font-size: 14px;
+    letter-spacing: 2px;
+
+}

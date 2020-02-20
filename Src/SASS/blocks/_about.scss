@@ -1,0 +1,39 @@
+.about{
+    margin-top: 50px;
+    &__title{
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    &__text{
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 100;
+        margin-right: 30px;
+        letter-spacing: 1px;
+    }
+    &__wrapper1{
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .hr {
+            borde: black;
+            width: 50px;
+        }}
+    &__wrapper2{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__video{
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
