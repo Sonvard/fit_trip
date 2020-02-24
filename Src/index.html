@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/font.css">
     <link rel="stylesheet" href="CSS/slick.css">
-    <link rel="stylesheet" href="CSS/blocks/style.min.css">
+    <!-- <link rel="stylesheet" href="CSS/blocks/style.min.css"> -->
+    <link rel="stylesheet" href="CSS/style.min.css">
     </head>
 
 <body>
@@ -45,11 +46,11 @@
     
                 <nav class="nav">
                     <ul class="nav__ul">
-                        <li class="nav__item"><a href="#" class="nav__link1">Кто мы</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link2">Команда</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link3">Программа</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link4">Локация</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link5">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Кто мы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Программа</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Локация</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
             </header>
@@ -73,60 +74,50 @@
                     Привет, мы команда Qore, а точнее группа единомышленников, которая объединена любовью к фитнесу и здоровому образу жизни. <br><br> Ежегодно мы помогаем сотням людей начать новый, здоровый образ жизни и избавиться от лишнего веса.Мы постоянно проходим специализированные курсы и работаем над собой, для того, чтобы вам было интересно в туре и вы были уверены в нашем профессионализме. <br><br>
                     Фитнес туры от Qore — это идейный отдых объединивший путешествие, тренировки, серфинг и восстановление на берегу  океана. Формат «фитнес-путешествия», мы выбрали, потому что только заграницей, человек может выйти за рамки привычной жизни и по-настоящему перезагрузиться.         
                 </div>
-                <video class="about__video" src="/Src/Img/workout_video.mp4"  width="50%" autoplay muted loop ></video>
+                <video class="about__video" src="Img/workout_video.mp4"  width="65%" autoplay muted loop ></video>
             </div>
            </div>
     </section>
 
     <section class="team">
         <div class="container">
-            <div class="trainer-item">
-                <div class="trainer-item__wrapper1">
-                    <div class="trainer-item__content trainer-item__content_active">
-                        <img src="img/card_trainer_1.jpg" alt="Евгений Пучков" class="trainer-item__img">
-                        <a href="#" class="trainer-item__link">Пучков Евгений</a>
-                    </div>
-                    <div class="trainer-item__title"> Пучков Евгений
-                        <div class="trainer-item__description">
-                            Начинал свою спортивную деятельность в первых классах школы с греко-римской борьбы. По окончанию школы, активно начал изучать основы работы с железом в культуризме и силовых видах спорта. Позже, снова начал изучать борьбу, но уже бразильское Джиу-джитсу и греплинг. <br><br>
-                            2013 год - начало работы тренером по фитнесу. С 2014-2016 годах участвует в соревнованиях по бодибилдингу, занимая первые и призовые места. <br><br>
-                            
-                            На данный момент: <br><br>
-
-                            - тренер в сети Sportlife категории "премиум тренер"; <br>
-                            - преподаватель в школе тренеров Profit school; <br>
-                            - методист в сети клубов Sportlife; <br>
-                            - любитель спортивных челенжей, бросай ему вызов!
-                        </div>
-
-                        <a href="#" class="trainer-item__back">назад</a>
-                    </div>
-        </div>
-    </div>
-
-    <div class="trainer-item">
-        <div class="trainer-item__wrapper1">
-            <div class="trainer-item__content trainer-item__content_active">
-                <img src="img/card_trainer_2.jpg" alt="Шевченко Игорь" class="trainer-item__img">
-                <a href="#" class="trainer-item__link">Шевченко Игорь</a>
+            <div class="container__wrapper">
+                <hr class="hr">
+                <div class="about__title"> Команда </div>
+                <hr class="hr">
             </div>
-            <div class="trainer-item__title"> Шевченко Игорь
-                <div class="trainer-item__description">
-                    Из 29 лет жизни Игорь в спорте 21 год. Многократный призер различных соревнований по легкой атлетике. 
-                    Игорь - регулярный участник забегов «Гонка нации», чемпион Европы по бодибилдингу, победитель European Open Cup WABBA 2017 в категории «MEN FITNESS».
-                    Как сертифицированный тренер школы «Fitnessservice» имеет опыт работы в легкоатлетическом манеже РВУФК и СК «Фитнес Реал». 
-                    На данный момент:
-
-                    - тренер в сети Sportlife категории "премиум тренер".
-
-                    Мы уверены, что Игорь сможет обучить вас абсолютно любым навыкам. А если вы уже ими владеете, он филигранно отточит их до совершенства! 
-                </div>
-
-                <a href="#" class="trainer-item__back">назад</a>
+            <div class="team">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Img/card_trainer_1.jpg" alt="Avatar" style="width:270px;height:365px;">
+                        <h3> Евгений Пучков</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Евгений Пучков</h3>
+                        <h4>Премиум тренер</h4>
+                        <p>Начинал свою спортивную деятельность в первых классах школы с греко-римской борьбы. По окончанию школы, активно начал изучать основы работы с железом в культуризме и силовых видах спорта. Позже, снова начал изучать борьбу, но уже бразильское Джиу-джитсу и греплинг. 2013 год - начало работы тренером по фитнесу. С 2014-2016 годах участвует в соревнованиях по бодибилдингу, занимая первые и призовые места.</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Img/card_trainer_2.jpg" alt="Avatar" style="width:270px;height:365px;">
+                        <h3> Шевченко Игорь</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Шевченко Игорь</h3>
+                        <h4>Премиум тренер</h4>
+                        <p>We love that guy</p>
+                      </div>
+                    </div>
+                  </div>
             </div>
-</div>
-</div>
-    </div>
+            
+        
+            </div>
     </section>
 
     

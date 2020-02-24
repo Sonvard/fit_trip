@@ -1,17 +1,17 @@
 .about{
-    margin-top: 50px;
+    margin-top: 100px;
     &__title{
         text-align: center;
-        padding-bottom: 50px;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 32px;
+        font-weight: 300;
         letter-spacing: 4px;
+        line-height: 25px;
     }
     &__text{
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 100;
-        margin-right: 30px;
+        margin-right: 70px;
         letter-spacing: 1px;
     }
     &__wrapper1{
@@ -20,17 +20,13 @@
         display: flex;
         justify-content: space-between;
         .hr {
-            borde: black;
             width: 50px;
         }}
     &__wrapper2{
+        margin-top: 100px;
         display: flex;
         justify-content: space-between;
-    }
-    &__video{
-        margin: 0 auto;
-    }
-    
+    } 
 }
 
 

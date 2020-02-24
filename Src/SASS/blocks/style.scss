@@ -1,6 +1,8 @@
 @import '../Base/_variables';
 @import '../Base/_mixins';
 
+// *{font-family: 'Roboto', sans-serif;}
+
 *.container {
     width: 1140px;
 }
@@ -8,6 +10,7 @@
 @import '../blocks/header';
 @import '../blocks/slider';
 @import '../blocks/about';
+@import '../blocks/team';
 
 
 
