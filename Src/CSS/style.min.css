@@ -1,5 +1,16 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 *.container {
   width: 1140px;
+}
+
+*.subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  text-align: center;
+  margin: 50px 0 0 0;
 }
 
 .header {
@@ -111,10 +122,21 @@
   line-height: 25px;
 }
 
+.about__subtitle {
+  margin: 0;
+}
+
+.about__subtitle p {
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
 .about__text {
   text-align: justify;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-right: 70px;
   letter-spacing: 1px;
 }
@@ -131,14 +153,20 @@
 }
 
 .about__wrapper2 {
-  margin-top: 100px;
+  height: 450px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
 
+.team {
+  margin-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(207, 207, 207, 0.1);
+}
+
 .container__wrapper {
   padding-top: 100px;
-  padding-bottom: 100px;
   width: 300px;
   margin: 0 auto;
   display: flex;
@@ -152,26 +180,34 @@
 .trainers {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 60px;
 }
 
 .card {
-  background-color: transparent;
   width: 270px;
-  height: 365px;
-  border: 1px solid #f1f1f1;
+  min-height: 350px;
+  border: none;
+  cursor: pointer;
 }
 
-h2 {
+.card__wrapper {
+  background-color: rgba(207, 207, 207, 0.1);
+  width: 270px;
+  height: 40px;
+  color: black;
+}
+
+.card__wrapper h2 {
   font-size: 18px;
   font-weight: 100;
-  color: white;
+  color: black;
   letter-spacing: 2px;
   line-height: 40px;
   text-align: center;
 }
 
-h3 {
-  color: white;
+.back-title {
+  color: black;
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -179,21 +215,16 @@ h3 {
   text-align: center;
 }
 
-.title-back {
-  color: white;
-  font-weight: 500;
-}
-
 h4 {
   padding-top: 10px;
   padding-bottom: 30px;
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 
-p {
+.back-descr {
   font-size: 14px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -201,28 +232,81 @@ p {
   text-align: left;
 }
 
-.title-wrapper {
-  width: 270px;
-  height: 40px;
-  background-color: #111111;
+.modal {
+  display: none;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.card-back1 {
-  background: url(../../Img/puchkov.jpg) 50% no-repeat;
-  color: white;
-  padding: 150px 100px 100px 100px;
-  height: 450px;
+.modal-content {
+  margin: 15%, auto;
+  padding: 30px;
+  width: 70%;
+  height: 60%;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+}
+
+.close {
+  position: relative;
+  left: 95%;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nodisplay {
   display: none;
 }
 
-.card-back2 {
-  background: url(../../Img/shevchenko.jpg) 50% no-repeat;
-  color: white;
-  padding: 150px 100px 100px 100px;
-  height: 450px;
-  display: none;
+.location__title {
+  padding-top: 100px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location__title .hr {
+  width: 50px;
+}
+
+.location__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .location__img {
-  background: url(../../Img/location.JPG);
+  width: 200px;
+  height: 170px;
+}
+
+.location__img img {
+  height: 100%;
+}
+
+.location__descr {
+  margin-top: 50px;
+}
+
+.location__descr h3 {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.location__descr h3 span {
+  font-weight: bold;
+}
+
+.location__descr p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
 }

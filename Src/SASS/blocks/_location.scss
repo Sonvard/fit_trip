@@ -1,5 +1,42 @@
 .location {
-    &__img {
-        background: url(../../Img/location.JPG);
+    &__title {
+            padding-top: 100px;
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .hr {
+                width: 50px;
+            }
     }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 200px;
+        height: 170px;
+        & img {
+            height: 100%;
+        }
+    }
+    &__descr {
+        margin-top: 50px;
+        & h3 {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            & span {
+                font-weight: bold;
+            }
+        }
+        & p {
+            margin-top: 50px;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: justify;
+        }
+    }
+
 }

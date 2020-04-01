@@ -1,10 +1,17 @@
 @import '../Base/_variables';
 @import '../Base/_mixins';
 
-// *{font-family: 'Roboto', sans-serif;}
+* {font-family: 'Roboto', sans-serif;}
 
 *.container {
     width: 1140px;
+}
+
+*.subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    text-align: center;
+    margin: 50px 0 0 0;
 }
 
 @import '../blocks/header';

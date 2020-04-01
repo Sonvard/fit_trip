@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
    
     <title>Fit Trip</title>
-    <link rel="stylesheet" href="CSS/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="CSS/bootstrap-grid.min.css">
+    <!-- <link rel="stylesheet" href="CSS/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/font.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Roboto:100,300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="CSS/slick.css">
     <!-- <link rel="stylesheet" href="CSS/blocks/style.min.css"> -->
     <link rel="stylesheet" href="CSS/style.min.css">
@@ -69,6 +70,9 @@
                 <div class="about__title"> Кто мы </div>
                 <hr class="hr">
             </div>
+                <p class="subtitle">"Важно получать удовольствие от всего, чем занимаешься в жизни. <br>
+                Тогда наступит внутренняя гармония"</p>
+            
             <div class="about__wrapper2">
                 <div class="about__text">
                     Привет, мы команда Qore, а точнее группа единомышленников, которая объединена любовью к фитнесу и здоровому образу жизни. <br><br> Ежегодно мы помогаем сотням людей начать новый, здоровый образ жизни и избавиться от лишнего веса.Мы постоянно проходим специализированные курсы и работаем над собой, для того, чтобы вам было интересно в туре и вы были уверены в нашем профессионализме. <br><br>
@@ -80,52 +84,102 @@
     </section>
 
     <section class="team">
-        <div class="container">
+        <div class=" container">
             <div class="container__wrapper">
                 <hr class="hr">
                 <div class="about__title"> Команда </div>
                 <hr class="hr">
             </div>
+
+            <p class="subtitle">"Фитнес-тур с QORE - это <br> полная эмоциональная и физическая перезагрузка"</p>
+
             <div class="trainers">
-                <div class="card">
+
+
+                <div class="card" onclick="showModal(1)">
                     <div class="card-inner">
-                      <img src="Img/card_trainer_1.jpg" alt="Avatar" style="width:270px;height:365px;">
-                            <div class="title-wrapper">
-                                <h2 id="puchkov"> Евгений Пучков  </h2>
+                        <img src="Img/card_trainer_1.jpg" alt="Евгений Пучков">
+                            <div class="card__wrapper">
+                                <h2> Евгений Пучков  </h2>
                             </div>
                     </div> 
-                </div>
+                </div>   
 
-                      <div class="card-back1" id="card-back1">
-                        <h3 class="title-back"> Евгений Пучков </h3>
-                        <h4>Премиум тренер</h4>
-                        <p>Начинал свою спортивную деятельность в первых классах школы с греко-римской борьбы. По окончанию школы, активно начал изучать основы работы с железом в культуризме и силовых видах спорта. Позже, снова начал изучать борьбу, но уже бразильское Джиу-джитсу и греплинг. 2013 год - начало работы тренером по фитнесу. С 2014-2016 годах участвует в соревнованиях по бодибилдингу, занимая первые и призовые места.</p>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-inner">
-                            <img src="Img/card_trainer_2.jpg" alt="Avatar" style="width:270px;height:365px;">
-                                <div class="title-wrapper">
-                                    <h2 id="shevchenko"> Игорь Шевченко </h2>
-                                </div>
+                <div class="card" onclick="showModal(2)">
+                    <div class="card-inner">
+                        <img src="Img/card_trainer_2.jpg" alt="Игорь Шевченко">
+                        <div class="card__wrapper">
+                            <h2> Игорь Шевченко </h2>
                         </div>
-                      </div>
-                            
-                          <div class="card-back2">
-                            <h3 class="title-black"> Игорь Шевченко </h3>
-                            <h4>Премиум тренер</h4>
-                            <p>Из 29 лет жизни Игорь в спорте 21 год. Многократный призер различных соревнований по легкой атлетике. Игорь - регулярный участник забегов «Гонка нации», чемпион Европы по бодибилдингу, победитель European Open Cup WABBA 2017 в категории «MEN FITNESS». Как сертифицированный тренер школы «Fitnessservice» имеет опыт работы в легкоатлетическом манеже РВУФК и СК «Фитнес Реал».</p>
-                          </div>
+                    </div>
+                    
+                </div>     
 
             </div>
-    
-                 
+            
+            <div class="modal" id="windowModal">
+                <div class="modal-content nodisplay" id="traner_1">
+                      <span class="close">×</span>
+                      <h3 class="back-title">Евгений Пучков</h3>
+                    <div class="modal-body">
+                        <h4>Премиум тренер</h4>
+                        <p class="back-descr">Начинал свою спортивную деятельность в первых классах школы с греко-римской борьбы. По окончанию школы, активно начал изучать основы работы с железом в культуризме и силовых видах спорта. Позже, снова начал изучать борьбу, но уже бразильское Джиу-джитсу и греплинг. 2013 год - начало работы тренером по фитнесу. С 2014-2016 годах участвует в соревнованиях по бодибилдингу, занимая первые и призовые места.</p>
+                    </div>
+                </div>
+                <div class="modal-content nodisplay" id="traner_2">
+                    <span class="close">×</span>
+                    <h3 class="back-title">Игорь Шевченко</h3>
+                  <div class="modal-body">
+                      <h4>Премиум тренер</h4>
+                      <p class="back-descr">Из 29 лет жизни Игорь в спорте 21 год. Многократный призер различных соревнований по легкой атлетике. Игорь - регулярный участник забегов «Гонка нации», чемпион Европы по бодибилдингу, победитель European Open Cup WABBA 2017 в категории «MEN FITNESS». Как сертифицированный тренер школы «Fitnessservice» имеет опыт работы в легкоатлетическом манеже РВУФК и СК «Фитнес Реал».</p>
+                </div>
+              </div>
+
             </div>
+        </div>  
     </section>
 
     <section class="location">
-        <div class="location__img">
+        <div class="location__container container">
+            <div class="location__title">
+                <hr class="hr">
+                <div class="about__title"> Локация </div>
+                <hr class="hr">
+            </div>
+
+            <p class="subtitle">"На 10 дней, абсолютно разные люди попадают в наш маленький кэмп, <br> обмениваясь положительной энергетикой"</p>
             
+            <div class="location__wrapper">
+                <div class="location__img">
+                    <img src="Img/hotel/hotel_1.jpg" alt="фото гостиницы">
+                </div>
+                <div class="location__img">
+                    <img src="Img/hotel/hotel_2.jpg" alt="фото гостиницы">
+                </div>
+                <div class="location__img">
+                    <img src="Img/hotel/hotel_3.jpg" alt="фото гостиницы">
+                </div>
+                <div class="location__img">
+                    <img src="Img/hotel/hotel_4.jpg" alt="фото гостиницы">
+                </div>
+            </div>
+
+            <div class="location__descr">
+                <h3> <span>Гостиница:</span> Iberostar Punta Cana 5* (Пунта-Кана, Доминиканская республика)</h3>
+                <h3><span>Сайт: </span> <a href="https://www.iberostar.com/" target="_blank">https://www.iberostar.com/</a> </h3>
+                <h3> <span>Питание: </span>  континентальный, вегетарианский, веганский, американский, шведский стол</h3>
+                <p>
+                    Курортный отель Iberostar Punta Cana находится в городе Пунта-Кана, в 29 км от пресноводных лагун. Номера оснащены телевизором, свободном доступе Wi-Fi. Из окон номеров открывается вид на море или сад. В каждом номере собственная ванная комната.Расстояние до порта Кап-Кана составляет 35 км, а до Плайя Хуанийо — 33 км. Ближайший международный аэропорт, Пунта-Кана, расположен в 19 км.
+                    <br><br>
+                    Баваро — отличный выбор, если вам интересны водные виды спорта, экскурсии и развлечения на свежем воздухе.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="programm">
+        <div class="programm__container container">
+
         </div>
     </section>
     

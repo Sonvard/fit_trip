@@ -14,8 +14,26 @@ $(document).ready(function(){
 
 //team cards
 
-let firstTrainer = document.querySelector('#puchkov');
-firstTrainer.onclick = function() {
-  let cardBack1 = document.querySelector('#card-back1');
-  cardBack1.style.display = block;
+var modal = document.getElementById('windowModal');
+var link = document.getElementById("trainerLink");
+var span = document.getElementsByClassName("close");
+
+
+window.onclick = function(event) {
+  console.log(event.target);
+  if (event.target == modal || event.target.className == "close") {
+    modal.style.display = "none";
+
+    cols = document.getElementsByClassName("modal-content");
+    for(var i = 0; i < cols.length; i++)
+    {
+      cols[i].classList.add('nodisplay');
+    }
+  }  
+};
+
+function showModal(x) {
+  console.log(x);
+  modal.style.display = "block";
+  document.getElementById("traner_"+x).classList.remove('nodisplay');
 }

@@ -7,10 +7,19 @@
         letter-spacing: 4px;
         line-height: 25px;
     }
+    &__subtitle {
+        margin: 0;
+        & p{
+            font-family: 'Caveat', cursive;
+            font-size: 16px;
+            text-align: center;
+            margin: 50px 0 0 0;
+        }
+    }
     &__text{
         text-align: justify;
         font-size: 14px;
-        font-weight: 100;
+        font-weight: 300;
         margin-right: 70px;
         letter-spacing: 1px;
     }
@@ -23,7 +32,8 @@
             width: 50px;
         }}
     &__wrapper2{
-        margin-top: 100px;
+        height: 450px;
+        margin-top: 60px;
         display: flex;
         justify-content: space-between;
     } 
